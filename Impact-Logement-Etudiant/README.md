@@ -12,12 +12,16 @@ Grâce à ce questionnaire, ce projet s'appuie sur un échantillon de 121 étudi
 ## Ce que j'ai fait avec Gretl :
 Ce dépôt contient les ressources suivantes :
 - **Nettoyage et préparation des données**
-      - Scrpipt : ./analyse-variables
+              - Scrpipt : [Preparation_transformation_données.inp](https://github.com/Kenza735/Data-Projects-Kenza-Haddar/blob/main/Impact-Logement-Etudiant/Preparation_transformations_donn%C3%A9es.inp)
 - **Méthodes statistiques :**
-          - Script : ./analyse-variables
+              - Script : [analyse-variables.inp](https://github.com/Kenza735/Data-Projects-Kenza-Haddar/blob/main/Impact-Logement-Etudiant/analyse-variables.inp)
     - Statistiques descriptives
+              - Sortie de code : [Analyse-variables.txt](./Analyse-variables.txt)
+              - Graphique : [diagramme_parents](./Diagramme_parents.png)  [Diagramme_résulats_scolaire](./Diagramme_résultats_scolaire.png)
     - Analyse de corrélation
     - Régression linéaire multiple (MCO)
+              - Graphique du premier modèle MCO : [1er MCO](./Graph_1er_MCO.png)
+              - Graphique du second modèle MCO : [2nd MCO](./Graph_2nd_MCO.png)
 - **Visualisation :** Graphiques et outputs de résultats issus des estimations.
 
 ---------------------------------------------------------------------------------------------------
