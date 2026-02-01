@@ -33,12 +33,12 @@ Les données ont été transformées pour être exploitables :
 - Recodage des variables qualitatives en variables binaires
 - Vérification des valeurs manquantes
 
-  Script : [Preparation_transformation_données.inp](https://github.com/Kenza735/Data-Projects-Kenza-Haddar/blob/main/Impact-Logement-Etudiant/Preparation_transformations_donn%C3%A9es.inp)
+Script : [Preparation_transformation_données.inp](https://github.com/Kenza735/Data-Projects-Kenza-Haddar/blob/main/Impact-Logement-Etudiant/Preparation_transformations_donn%C3%A9es.inp)
 
   
 **Méthodes statistiques :**
   
-  Script : [analyse-variables.inp](https://github.com/Kenza735/Data-Projects-Kenza-Haddar/blob/main/Impact-Logement-Etudiant/analyse-variables.inp)
+Script : [analyse-variables.inp](https://github.com/Kenza735/Data-Projects-Kenza-Haddar/blob/main/Impact-Logement-Etudiant/analyse-variables.inp)
   
   - **Analyse descriptives**
   Pour cela, on utilise la commande "summary".
@@ -47,20 +47,19 @@ Les données ont été transformées pour être exploitables :
     - Graphique de la variable "résultat scolaire" : [Diagramme_résulats_scolaire](./Diagramme_résultats_scolaire.png)
 
 
-**Analyse de corrélation**
-- Tests de corrélation entre les résultats scolaires et :
+- **Analyse de corrélation**
+  - Tests de corrélation entre les résultats scolaires et :
 le fait de vivre chez ses parents
 le niveau d’étude
 le type de logement
 Résultat : pas de corrélation significative entre vivre chez ses parents et la moyenne.
 
    
-**Régression linéaire multiple (MCO)**
-Le premier modèle MCO contient uniquement la variable principale “vivre chez ses parents”, afin d’obtenir une estimation de son effet sur la moyenne scolaire.
-Graphique du premier modèle MCO : [1er MCO](./Graph_1er_MCO.png)
-
-Le second modèle MCO contient l’ensemble des variables de contrôle afin d’isoler l’effet propre du fait de vivre chez ses parents et de réduire les biais liés aux variables omises.
-Graphique du second modèle MCO : [2nd MCO](./Graph_2nd_MCO.png)
+- **Régression linéaire multiple (MCO)**
+  - Le premier modèle MCO contient uniquement la variable principale “vivre chez ses parents”, afin d’obtenir une estimation de son effet sur la moyenne scolaire.
+    Graphique du premier modèle MCO : [1er MCO](./Graph_1er_MCO.png)
+  - Le second modèle MCO contient l’ensemble des variables de contrôle afin d’isoler l’effet propre du fait de vivre chez ses parents et de réduire les biais liés aux            variables omises.
+    Graphique du second modèle MCO : [2nd MCO](./Graph_2nd_MCO.png)
       
 ---
 *Pour une analyse détaillée des hypothèses, de la méthodologie et des conclusions, consultez la page dédiée sur mon [Portfolio Notion](https://www.notion.so/Kenza-Haddar-2d8c042088c3801a89e8f8f1a9b43b64?source=copy_link)*
