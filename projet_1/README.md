@@ -10,7 +10,7 @@ Grâce à ce questionnaire, ce projet s'appuie sur un échantillon de 121 étudi
 
 ## Ce que j'ai fait avec Gretl :
 Ce dépôt contient les ressources suivantes :
-- **Scripts d'analyse :** Codes sources au format **.imp** pour le logiciel **Gretl**.
+- **Scripts d'analyse :** Codes sources au format **.inp** pour le logiciel **Gretl**.
 - **Nettoyage et préparation des données**
 - **Méthodes statistiques :**
     - Statistiques descriptives
@@ -19,4 +19,4 @@ Ce dépôt contient les ressources suivantes :
 - **Visualisation :** Graphiques et outputs de résultats issus des estimations.
 
 ---------------------------------------------------------------------------------------------------
-*Pour une analyse détaillée des hypothèses, de la méthodologie et des conclusions, consultez la page dédiée sur mon [Portfolio Notion]([https://www.notion.so/Kenza-Haddar-2d8c042088c3801a89e8f8f1a9b43b64?source=copy_link])*
+*Pour une analyse détaillée des hypothèses, de la méthodologie et des conclusions, consultez la page dédiée sur mon [Portfolio Notion](https://www.notion.so/Kenza-Haddar-2d8c042088c3801a89e8f8f1a9b43b64?source=copy_link)*
