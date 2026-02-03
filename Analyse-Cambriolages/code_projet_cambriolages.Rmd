@@ -1,6 +1,11 @@
 ---
-title: "Code d'analyse de l'évolution des cambriolages et tentatives de cambriolages en France "
-output: html_document
+title: 'Analyse de l''évolution des cambriolages et tentatives de cambriolages en France '
+output:
+html_document:
+  toc: true
+  toc_float: true
+  theme: cosmo
+  code_folding: hide
 date: "2026-02-03"
 ---
 
