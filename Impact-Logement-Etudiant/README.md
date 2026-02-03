@@ -57,9 +57,9 @@ Résultat : pas de corrélation significative entre vivre chez ses parents et la
    
 - **Régression linéaire multiple (MCO)**
   - Le premier modèle MCO contient uniquement la variable principale “vivre chez ses parents”, afin d’obtenir une estimation de son effet sur la moyenne scolaire.
-    Graphique du premier modèle MCO : [1er MCO](./Graph_1er_MCO.png)
+    Graphique du premier modèle MCO : [1er MCO](./Graph_1erMCO.png)
   - Le second modèle MCO contient l’ensemble des variables de contrôle afin d’isoler l’effet propre du fait de vivre chez ses parents et de réduire les biais liés aux            variables omises.
-    Graphique du second modèle MCO : [2nd MCO](./Graph_2nd_MCO.png)
+    Graphique du second modèle MCO : [2nd MCO](./Graph_2ndMCO.png)
       
 ---
-*Pour une analyse détaillée des hypothèses, de la méthodologie et des conclusions, consultez la page dédiée sur mon [Portfolio Notion](https://www.notion.so/Kenza-Haddar-2d8c042088c3801a89e8f8f1a9b43b64?source=copy_link)*
+*Pour une analyse détaillée des hypothèses, de la méthodologie et des conclusions, consultez la page dédiée sur mon [Portfolio Notion](https://oil-license-98c.notion.site/Kenza-Haddar-2d8c042088c3801a89e8f8f1a9b43b64?p=2d8c042088c381599df0c58c1bd3d580&pm=c)*
