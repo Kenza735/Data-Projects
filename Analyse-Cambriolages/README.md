@@ -12,7 +12,7 @@ Ces données viennent du site data.gouv.fr et couvrent une période de 10 ans, a
 - **Méthodes statistiques :**
     - Analyse descriptive
     - Modélisation de la tendance par **Régression Linéaire (MCO)**.
-    - **Régression segmentée** pour mesurer la rupture structurelle liée à l'année 2020.
+    - **modélisation par variable binaire** pour tester l'existence d'une rupture  structurelle liée à la crise sanitaire de 2020 (Covid-19)
 - **Visualisation :** Graphiques générés sous **R Studio** mettant en évidence les ruptures de tendance.
 
 ---
