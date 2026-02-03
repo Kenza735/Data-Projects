@@ -1,0 +1,87 @@
+---
+title: 'Analyse de l''évolution des cambriolages et tentatives de cambriolages en France '
+output:
+html_document:
+  toc: true
+  toc_float: true
+  theme: cosmo
+  code_folding: hide
+date: "2026-02-03"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#mardown
+```{r}
+# Methode statistique
+
+#-------------------------------------------------------------------
+
+# Chargement de la base de données avec deux variables distinctes : 
+database = read.csv("Donnees_cambriolages.csv", header = TRUE, sep = ";")
+
+library(dplyr)
+
+#-------------------------------------------------------------------
+
+# Statistiques descriptives :
+stats<- database %>%
+  summarise(
+    moyenne_Nombre = mean(Nombre, na.rm = TRUE),
+    ecart_type_Nombre = sd(Nombre, na.rm = TRUE),
+    min_Nombre = min(Nombre, na.rm = TRUE),
+    max_Nombre = max(Nombre, na.rm = TRUE),
+    n = n()
+  )
+print(stats)
+#Pour faire un tableau
+knitr::kable(stats) # Pour faire un joli tableau
+
+#-------------------------------------------------------------------
+
+# Régression linéaire (MCO)
+
+# Préparation des données (créer une suite de nombres pour le temps) car ma variable "temps" contient des lettres : 
+database_reg <- database %>%
+  mutate(index_temps = row_number())
+
+# Le modèle de régression linéaire (MCO) :
+modele <- lm(Nombre ~ index_temps, data = database_reg)
+summary(modele)
+
+#-------------------------------------------------------------------
+
+#Modélisation par variable qualitative pour comparer la période avant et après le premier confinement (Mars 2020).
+#Le confinement à débuté en mars 2020 soit le 51ème mois selon notre colonne "temps" : 
+database_rupture <- database %>%
+  mutate(
+    index_temps = row_number(),
+    periode_covid = ifelse(index_temps >= 51, "Apres", "Avant")
+  )
+
+#Régression multiple (MCO)
+modele_simple <- lm(Nombre ~ index_temps + periode_covid, data = database_rupture)
+summary(modele_simple)
+
+#Visualisation : 
+# Boxplot :Comparaison du nombre de cambriolage avant et après mars 2020
+boxplot(database_rupture$Nombre ~ database_rupture$periode_covid,
+        main = "Comparaison Avant/Après 2020",
+        xlab = "Période",
+        ylab = "Nombre de cambriolages",
+        col = c("tomato", "lightblue"))
+
+# Graphique d'évolution avec droite de regression
+plot(database_rupture$index_temps, database_rupture$Nombre, 
+     type = "o",          
+     pch = 16,             
+     col = "blue", 
+     main = "Évolution temporelle",
+     xlab = "Temps (mois)", 
+     ylab = "Cambriolages")
+
+abline(modele_simple, col = "red", lwd = 2)
+abline(v = 51, col = "black", lty = 2)
+```
